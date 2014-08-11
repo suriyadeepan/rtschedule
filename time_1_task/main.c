@@ -3,15 +3,17 @@
 #include "stdio.h"
 #include "taskLib.h"
 
-#define ITERATIONS 200
+#define ITERATIONS 100
 
 int printit(void);
 
 
 void timing() /* Function to perform the timing */
 {
-	FUNCPTR function_ptr = printit; /* a pointer to the function "printit" */
-	timex(function_ptr,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL); /* Timing the "print" function */ 
+	/* a pointer to the function "printit" */
+	FUNCPTR function_ptr = printit; 
+	/* Timing the "print" function */ 
+	timex(function_ptr,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 }
 
 int printit(void) /* Function being timed */
