@@ -1,4 +1,4 @@
 Scheduling Algorithms in RTS
 ---
 
-working on it...
+	[x] Time a single task
