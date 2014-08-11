@@ -3,19 +3,19 @@
 #include "taskLib.h"
 #include "stdio.h"
 
-#define ITER 10
+#define ITER 15
 
 void print_task();
 
 void main(){
 	
-	int taskId,i=0;
+	int taskId,i=1;
 	
 	for(;i<ITER;i++)
-		taskId = taskSpawn("tprint_task",100,0x100,200,
+		taskId = taskSpawn("tprint_task",i*50,0x100,200,
 				(FUNCPTR)print_task,i,0,0,0,0,0,0,0,0,0);
 	
 }
 void print_task(void){
-	printf("\nExecute print_task : %d",taskIdSelf());
+	printf("\nTID : %d",taskIdSelf());
 }
