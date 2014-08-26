@@ -1,5 +1,5 @@
-msgqueue_partialImage/Debug/Objects/msgqueue/msgq.o: \
-  C:/Users/l4d/Documents/rtschedule/msgqueue/msgq.c \
+pr_sched_partialImage/Debug/Objects/pr_sched/pr_sched.o: \
+  C:/Users/l4d/Documents/rtschedule/pr_sched/pr_sched.c \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\vxWorks.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\vxWorksCommon.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\types/vxCpu.h \
@@ -43,13 +43,8 @@ msgqueue_partialImage/Debug/Objects/msgqueue/msgq.o: \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\tool/common/private/toolMacrosP.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\version.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sys/vxLibCfgDefsP.h \
-  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\msgQLib.h \
-  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\msgQLibCommon.h \
-  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\vwModNum.h \
-  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\objLib.h \
-  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\objLibCommon.h \
-  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\errno.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\taskLib.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\vwModNum.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\classLib.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\qLib.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\qClass.h \
@@ -61,6 +56,9 @@ msgqueue_partialImage/Debug/Objects/msgqueue/msgq.o: \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\private/funcBindP.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\semLib.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\semLibCommon.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\objLib.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\objLibCommon.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\errno.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\symLib.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\symbol.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sllLib.h \
@@ -75,6 +73,8 @@ msgqueue_partialImage/Debug/Objects/msgqueue/msgq.o: \
   C:\WindRiver-GPPVE-3.6-ARM-Eval\diab\5.6.0.0\include\diab\stdarg.h \
   C:\WindRiver-GPPVE-3.6-ARM-Eval\diab\5.6.0.0\include\diab\va_list.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\private/msgQLibP.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\msgQLib.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\msgQLibCommon.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\private/vxdbgLibP.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\arch/simnt/dbgSimntLib.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\arch/simnt/instrI86.h \
@@ -89,6 +89,14 @@ msgqueue_partialImage/Debug/Objects/msgqueue/msgq.o: \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\arch/simnt/coprocSimnt.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\copyright_wrs.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sys/taskDefs.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\kernelLib.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sysLib.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\bootLib.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\ttyLib.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sioLib.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sioLibCommon.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\drv/timer/timerDev.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\logLib.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\stdio.h
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\vxWorks.h:
@@ -177,19 +185,9 @@ C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\version.h:
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sys/vxLibCfgDefsP.h:
 
-C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\msgQLib.h:
-
-C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\msgQLibCommon.h:
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\taskLib.h:
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\vwModNum.h:
-
-C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\objLib.h:
-
-C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\objLibCommon.h:
-
-C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\errno.h:
-
-C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\taskLib.h:
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\classLib.h:
 
@@ -212,6 +210,12 @@ C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\private/funcBindP.h:
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\semLib.h:
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\semLibCommon.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\objLib.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\objLibCommon.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\errno.h:
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\symLib.h:
 
@@ -241,6 +245,10 @@ C:\WindRiver-GPPVE-3.6-ARM-Eval\diab\5.6.0.0\include\diab\va_list.h:
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\private/msgQLibP.h:
 
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\msgQLib.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\msgQLibCommon.h:
+
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\private/vxdbgLibP.h:
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\arch/simnt/dbgSimntLib.h:
@@ -268,6 +276,22 @@ C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\arch/simnt/coprocSimnt.h:
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\copyright_wrs.h:
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sys/taskDefs.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\kernelLib.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sysLib.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\bootLib.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\ttyLib.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sioLib.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sioLibCommon.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\drv/timer/timerDev.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\logLib.h:
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\stdio.h:
 
