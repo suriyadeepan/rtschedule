@@ -13,11 +13,14 @@ int rdl[ ] = {8,5,10};
 // #tasks
 int N_TASKS = 3;
 
-// #end time of simulation
+// end time of simulation
 int END_TIME = 30;
 
-// #array of tids
+// array of tids
 int tid[3];
+
+// Assign Time Slice in #ticks
+int time_slice = 60; // ~= 1 second
 
 void t1(){
 	
@@ -119,7 +122,7 @@ void edf_sched(){
 			// 2] resume the selected task
 			taskResume(tid[tid_current]);
 			// 3] put current task in wait
-			taskDelay(2);
+			taskDelay(time_slice);
 			spawnAll(); //--> BUG FIX 01
 		}
 		
@@ -137,14 +140,3 @@ void edf_sched(){
 	END_TIME = -1;
 	
 }
-
-
-
-
-
-
-
-
-
-
-
