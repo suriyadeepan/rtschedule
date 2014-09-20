@@ -84,10 +84,10 @@ void suspendAll(){
 
 void spawnAll(){
 	
-	if( taskIdVerify(tid[2]) == ERROR )
+	if( taskIdVerify(tid[0]) == ERROR )
 		tid[0] = taskSpawn("t1",101,0x100,1000,(FUNCPTR)t1,0,0,0,0,0,0,0,0,0,0);
 	
-	if( taskIdVerify(tid[2]) == ERROR )
+	if( taskIdVerify(tid[1]) == ERROR )
 		tid[1] = taskSpawn("t2",101,0x100,1000,(FUNCPTR)t2,0,0,0,0,0,0,0,0,0,0);
 	
 	if( taskIdVerify(tid[2]) == ERROR )
