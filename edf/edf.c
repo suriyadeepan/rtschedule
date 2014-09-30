@@ -1,7 +1,6 @@
 #include "vxworks.h"
 #include "logLib.h"
 #include "taskLib.h"
-#include "stdio.h"
 
 // #input params
 int C[ ] = {1,2,4};
@@ -40,7 +39,7 @@ void t3(){
 		logMsg("*** Task : T3 ***\n",0,0,0,0,0,0);
 }
 
-void updateParams(int tid_current){
+void updateParams(int *rdl, int *ret, int tid_current){
 	
 	int i;
 	for(i=0;i<N_TASKS;i++){
@@ -56,7 +55,7 @@ void updateParams(int tid_current){
 		
 }
 
-int findBestTask(){
+int findBestTask(int *rdl, int *ret,int current_id){
 	
 	// find the best task 
 	//		=> task with smallest relative dealine
@@ -71,6 +70,9 @@ int findBestTask(){
 			min_rdl_id = i;
 		}
 	}
+	
+	if(current_id != -1 && rdl[current_id] == rdl[min_rdl_id] && ret[current_id] > 0)
+		return current_id;
 		
 	return min_rdl_id;
 }
@@ -94,9 +96,42 @@ void spawnAll(){
 		tid[2] = taskSpawn("t3",101,0x100,1000,(FUNCPTR)t3,0,0,0,0,0,0,0,0,0,0);
 }
 
+int nextEvent(int t, int current){
+	
+	/* Execution time of current task
+	 * 
+	 */
+	int exec = ret[current];
+	
+	/*
+	 *  get a copy of rdl and ret
+	 * 
+	 */
+	int i;
+	int rd[5];
+	int re[5];
+	
+	for(i=0;i<N_TASKS;i++){
+		rd[i] = rdl[i];
+		re[i] = ret[i];
+	}
+	
+	/*
+	 * find the next event => change in task id
+	 */
+	for(i=0;i<exec;i++){
+		updateParams(rd,re,current);
+		current = findBestTask(rd,re,current);
+	}
+	
+	return i;
+	
+}
+
 void edf_sched(){
 	
-	int i;
+	int i,t1;
+	int tid_current = -1;
 	
 	// define a time slice
 	
@@ -108,8 +143,12 @@ void edf_sched(){
 		
 		// find the most valid task
 		//  (i.e) least relative deadline
-		int tid_current = findBestTask();
-		logMsg("iteration : %d tid : %d\n",i,tid_current,0,0,0,0);
+		tid_current = findBestTask(rdl,ret,tid_current);
+		nextEvent(i,tid_current);
+		
+		t1 = nextEvent(i,tid_current);
+		
+		logMsg("iteration : %d tid : %d nextEvent : %d\n",i,tid_current,i+t1,0,0,0);
 		
 		// * If a task is selected
 		if(tid_current >= 0){
@@ -122,7 +161,7 @@ void edf_sched(){
 			// 2] resume the selected task
 			taskResume(tid[tid_current]);
 			// 3] put current task in wait
-			taskDelay(time_slice);
+			taskDelay(t1*time_slice);
 			spawnAll(); //--> BUG FIX 01
 		}
 		
@@ -132,8 +171,9 @@ void edf_sched(){
 		// update parameters 
 		//		: relative exec time => ret
 		//		: relative deadline  => rdl
-		updateParams(tid_current);
+		updateParams(rdl,ret,tid_current);
 		//spawnAll(); --> BUG FIX 01
+		
 		
 	}
 	

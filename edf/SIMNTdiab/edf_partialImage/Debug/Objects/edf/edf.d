@@ -89,8 +89,7 @@ edf_partialImage/Debug/Objects/edf/edf.o: \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\eventLibCommon.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\arch/simnt/coprocSimnt.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\copyright_wrs.h \
-  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sys/taskDefs.h \
-  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\stdio.h
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sys/taskDefs.h
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\vxWorks.h:
 
@@ -271,6 +270,4 @@ C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\arch/simnt/coprocSimnt.h:
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\copyright_wrs.h:
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sys/taskDefs.h:
-
-C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\stdio.h:
 
