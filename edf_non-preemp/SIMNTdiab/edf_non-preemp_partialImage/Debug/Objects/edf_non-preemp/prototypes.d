@@ -1,5 +1,5 @@
-edf_preemptive_partialImage/Debug/Objects/edf_preemptive/edf_prempt.o: \
-  C:/Users/l4d/Documents/rtschedule/edf_preemptive/edf_prempt.c \
+edf_non-preemp_partialImage/Debug/Objects/edf_non-preemp/prototypes.o: \
+  C:/Users/l4d/Documents/rtschedule/edf_non-preemp/prototypes.c \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\vxWorks.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\vxWorksCommon.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\types/vxCpu.h \
@@ -43,7 +43,6 @@ edf_preemptive_partialImage/Debug/Objects/edf_preemptive/edf_prempt.o: \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\tool/common/private/toolMacrosP.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\version.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sys/vxLibCfgDefsP.h \
-  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\logLib.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\taskLib.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\vwModNum.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\classLib.h \
@@ -89,8 +88,7 @@ edf_preemptive_partialImage/Debug/Objects/edf_preemptive/edf_prempt.o: \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\eventLibCommon.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\arch/simnt/coprocSimnt.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\copyright_wrs.h \
-  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sys/taskDefs.h \
-  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\tickLib.h
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sys/taskDefs.h
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\vxWorks.h:
 
@@ -177,8 +175,6 @@ C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\tool/common/private/toolMac
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\version.h:
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sys/vxLibCfgDefsP.h:
-
-C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\logLib.h:
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\taskLib.h:
 
@@ -271,6 +267,4 @@ C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\arch/simnt/coprocSimnt.h:
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\copyright_wrs.h:
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sys/taskDefs.h:
-
-C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\tickLib.h:
 

@@ -162,7 +162,12 @@ edf_non-preemp_partialImage/$(MODE_DIR)/Objects/edf_non-preemp/np_edf.o : C:/Use
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)dcc $(DEBUGFLAGS_C-Compiler) $(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only  -Xforce-declarations   -Xmake-dependency=0xd $(ADDED_CFLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-OBJECTS_edf_non-preemp_partialImage = edf_non-preemp_partialImage/$(MODE_DIR)/Objects/edf_non-preemp/np_edf.o
+edf_non-preemp_partialImage/$(MODE_DIR)/Objects/edf_non-preemp/prototypes.o : C:/Users/l4d/Documents/rtschedule/edf_non-preemp/prototypes.c
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)dcc $(DEBUGFLAGS_C-Compiler) $(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only  -Xforce-declarations   -Xmake-dependency=0xd $(ADDED_CFLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
+OBJECTS_edf_non-preemp_partialImage = edf_non-preemp_partialImage/$(MODE_DIR)/Objects/edf_non-preemp/np_edf.o \
+	 edf_non-preemp_partialImage/$(MODE_DIR)/Objects/edf_non-preemp/prototypes.o
 
 edf_non-preemp_partialImage/$(MODE_DIR)/edf_non-preemp_partialImage.o : $(OBJECTS_edf_non-preemp_partialImage)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)dld -tX86LH:vxworks66 -X -r5 -f 0x90,1,1  -o "$@" $(OBJECTS_edf_non-preemp_partialImage) $(ADDED_OBJECTS) $(IDE_LIBRARIES) $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
@@ -174,7 +179,7 @@ _clean :: edf_non-preemp_partialImage/$(MODE_DIR)/edf_non-preemp_partialImage_cl
 edf_non-preemp_partialImage/$(MODE_DIR)/edf_non-preemp_partialImage_clean : 
 	$(TRACE_FLAG)if [ -d "edf_non-preemp_partialImage" ]; then cd "edf_non-preemp_partialImage"; rm -rf $(MODE_DIR); fi
 
-DEP_FILES := edf_non-preemp_partialImage/$(MODE_DIR)/Objects/edf_non-preemp/np_edf.d
+DEP_FILES := edf_non-preemp_partialImage/$(MODE_DIR)/Objects/edf_non-preemp/np_edf.d edf_non-preemp_partialImage/$(MODE_DIR)/Objects/edf_non-preemp/prototypes.d
 -include $(DEP_FILES)
 
 
