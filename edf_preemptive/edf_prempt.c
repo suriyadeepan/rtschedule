@@ -1,7 +1,8 @@
 #include "vxworks.h"
 #include "logLib.h"
 #include "taskLib.h"
-#include "tickLIb.h"
+#include "tickLib.h"
+
 
 // #input params
 int C[ ] = {1,2,4};

@@ -90,7 +90,12 @@ edf_preemptive_partialImage/Debug/Objects/edf_preemptive/edf_prempt.o: \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\arch/simnt/coprocSimnt.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\copyright_wrs.h \
   C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sys/taskDefs.h \
-  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\tickLib.h
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\tickLib.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\timers.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\time.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\limits.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\tool/diab/limits.h \
+  C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\base/b_struct_timespec.h
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\vxWorks.h:
 
@@ -273,4 +278,14 @@ C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\copyright_wrs.h:
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\sys/taskDefs.h:
 
 C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\tickLib.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\timers.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\time.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\limits.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\tool/diab/limits.h:
+
+C:/WindRiver-GPPVE-3.6-ARM-Eval/vxworks-6.6/target/h\base/b_struct_timespec.h:
 
